@@ -32,7 +32,8 @@ const InputField = withStyles({
             '& .Mui-focused fieldset': {
                 borderColor: 'tan'
             }
-        }
+        },
+        'max-width': '300px'
     }
 })(TextField);
 
@@ -48,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     }
   }));
 
-const SignupStudent = () => {
+const Signup = () => {
     const classes = useStyles();
     const [firstName, setFirstName] = React.useState("");
     const [lastName, setLastName] = React.useState("");
@@ -174,8 +175,8 @@ const SignupStudent = () => {
             size='medium'
             inputProps={{ style:{color: 'black'}  }}
             value={password}/>
-            <div className={classes.button}>
-                <Button variant="contained" color="primary" onClick={onSubmit}>
+            <div className={classes.button} style={{maxWidth:"300px"}}>
+                <Button variant="contained" color="primary" onClick={onSubmit}  fullWidth={true} style={{maxWidth:"300px"}}>
                     Submit
                 </Button>
             </div>
@@ -209,7 +210,7 @@ const SignupStudent = () => {
           contentLabel="Example Modal"
         >
 
-            <h2 ref={_subtitle => (subtitle = _subtitle)}>Your account has existed already.</h2>
+            <h2 ref={_subtitle => (subtitle = _subtitle)}>Your account already exists.</h2>
             <div style={ {display: 'flex', flexDirection: 'row', justifyContent: 'center'} }>
                 <Link to='/'><Button variant="contained" color="primary">Login</Button></Link>
             </div>
@@ -218,4 +219,4 @@ const SignupStudent = () => {
     </div>
     )
 };
-export default SignupStudent;
+export default Signup;

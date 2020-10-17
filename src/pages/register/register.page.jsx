@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import SignupStudent from '../../component/signup/signup.component';
+import Signup from '../../component/signup/signup.component';
 const useStyles = makeStyles((theme) => ({
     parent: {
         display: 'flex',
@@ -38,7 +38,7 @@ const Register = () => {
     return (
         <div className={classes.parent}>
             <div className={classes.mainform}>
-                <div className={classes.option}>
+                {/* <div className={classes.option}>
                     <Paper square>
                         <Tabs
                             value={value}
@@ -46,17 +46,15 @@ const Register = () => {
                             textColor="primary"
                             onChange={handleChange}
                             aria-label="disabled tabs example"
-                            // disableRipple={true}
                             centered
                         >
                             <Tab label="Sign Up" />
-                            {/* <Tab label="Recruiter" /> */}
                         </Tabs>
                     </Paper>
-                </div>
+                </div> */}
 
                 <div className={classes.signup}>
-                    <SignupStudent />
+                    <Signup />
                 </div>
 
             </div>

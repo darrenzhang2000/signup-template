@@ -57,10 +57,10 @@ const Landing = () => {
                 <div className={classes.mainimage} style={styles}>
                     <div className={classes.infor}>
                         <Typography variant='h3' align='justify'>
-                            <b>iProfile</b>
+                            <b>Temp</b>
                         </Typography>
                         <Typography variant='h4' align='left'>
-                            Take your resume to the next level
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe ullam error vero nostrum ut excepturi, modi quis doloremque aliquam pariatur laboriosam a aperiam eligendi consequatur? Alias quas odio hic eum!
                         </Typography>
                     </div> 
                 </div>

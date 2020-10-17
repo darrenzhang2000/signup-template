@@ -34,11 +34,11 @@ export default function Header() {
                     <Avatar alt="Iprofile" src={logo} className={classes.large}/>
                 </IconButton>
             </Link>
-            <Link to='/home'>
+            {/* <Link to='/home'>
                 <Button variant="contained" color="primary">
                     Home
                 </Button>
-            </Link>
+            </Link> */}
 
         </Toolbar>
       </AppBar>
